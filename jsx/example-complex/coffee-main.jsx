@@ -3,7 +3,7 @@
 (function coffeeMainInit(module) {
   'use strict';
 
-  module.exports = function(app, window, React, Hello, World, undefined) {
+  module.exports = function(app, window, $, React, Hello, World, undefined) {
     return function(element) {
       var Index = React.createClass({
         render: function () {
@@ -15,7 +15,7 @@
         }
       });
 
-      React.renderComponent(
+      React.render(
         <Index />,
         element
       );

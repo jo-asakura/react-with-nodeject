@@ -12,7 +12,7 @@
       version: '0.0.1'
     },
     onLoaded: function (app) {
-      app.components.exampleSimpleApp.main(window.document.getElementsByTagName('body')[0]);
+      app.components.exampleSimpleApp.main(window.document.querySelector('.js-simple-app-placeholder'));
     }
   });
 })(window);

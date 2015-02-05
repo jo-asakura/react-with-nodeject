@@ -8,17 +8,17 @@
       {
         name: 'hello',
         type: require('./hello.jsx'),
-        deps: ['app', 'window', 'React']
+        deps: ['app', 'window', '$', 'React']
       },
       {
         name: 'main',
         type: require('./main.jsx'),
-        deps: ['app', 'window', 'React', 'hello', 'world']
+        deps: ['app', 'window', '$', 'React', 'hello', 'world']
       },
       {
         name: 'world',
         type: require('./world.jsx'),
-        deps: ['app', 'window', 'React']
+        deps: ['app', 'window', '$', 'React']
       }
     ]
   };

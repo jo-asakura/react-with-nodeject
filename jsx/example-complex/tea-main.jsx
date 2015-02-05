@@ -3,7 +3,7 @@
 (function teaMainInit(module) {
   'use strict';
 
-  module.exports = function(app, window, React, undefined) {
+  module.exports = function(app, window, $, React, undefined) {
     return function(element) {
       var Index = React.createClass({
         render: function () {
@@ -15,7 +15,7 @@
         }
       });
 
-      React.renderComponent(
+      React.render(
         <Index />,
         element
       );

@@ -17,7 +17,7 @@
     // NOTE:
     //  in case you have globally defined React on a client-side you can swap it to window.React.addons;
     //  this way you can significantly reduce compiled file size
-    var ReactAddons = require('react-addons');
+    var ReactAddons = require('react/addons');
 
     // NOTE:
     //  this is how you can include any npm module to your project;
@@ -33,6 +33,13 @@
       .define({ name: 'ReactAddons', wrap: { resolve: ReactAddons } });
 
     container
+      .define({
+        name: '$',
+        type: function (window) {
+          return document.querySelector.bind(window.document);
+        },
+        deps: ['window']
+      })
       .define({
         name: 'app',
         type: function () {
