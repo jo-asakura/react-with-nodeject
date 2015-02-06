@@ -15,10 +15,7 @@
         }
       });
 
-      React.render(
-        <Index />,
-        element
-      );
+      React.render(<Index />, element);
     };
   };
 })(module);

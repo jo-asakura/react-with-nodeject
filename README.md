@@ -14,8 +14,12 @@ The advantages of this approach are:
 
 There are two demo applications:
 
- - [example-simple](/jsx/example-simple) - A simple demo app with only 3 React modules;
- - [example-complex](/jsx/example-complex) - A more complex demo app with 5 React modules and 2 sub apps.
+ - A simple demo app with only 3 ReactJS modules:
+    - [ES 5 app source](/jsx/example-simple) and [HTML demo page](/demo-page/example-simple.html);
+    - [ES 6 app source](/jsx/example-simple-es6) and [HTML demo page](/demo-page/example-simple-es6.html);
+- A more complex demo app with 5 React modules and 2 sub apps:
+    - [ES 5 app source](/jsx/example-complex) and [HTML demo page](/demo-page/example-complex.html);
+    - [ES 6 app source](/jsx/example-complex-es6) and [HTML demo page](/demo-page/example-complex-es6.html).
 
 In order to get compiled js files run `grunt` command form a command line.
 

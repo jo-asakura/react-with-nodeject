@@ -4,8 +4,12 @@
   'use strict';
 
   var jsxLoader = require('../jsx-loader.js');
+  var config = require('./_configure.js');
+
+  window.console.info('example-simple config:', config);
+
   jsxLoader({
-    configure: require('./_configure.js'),
+    configure: config,
     config: {
       name: 'example-simple',
       namespace: 'demo',
