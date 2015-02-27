@@ -1,13 +1,13 @@
-/** @jsx React.DOM */
-
 let helloES6Init = (app, window, $, React, undefined) => {
   'use strict';
 
-  return React.createClass({
+  class Hello extends React.Component {
     render() {
       return (<span>hello</span>);
     }
-  });
+  }
+
+  return Hello;
 };
 
 export default helloES6Init;

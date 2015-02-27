@@ -1,5 +1,3 @@
-/** @jsx React.DOM */
-
 (function mainInit(module) {
   'use strict';
 

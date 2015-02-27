@@ -1,5 +1,3 @@
-/** @jsx React.DOM */
-
 (function coffeeHelloInit(module) {
   'use strict';
 

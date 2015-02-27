@@ -1,10 +1,8 @@
-/** @jsx React.DOM */
-
 let coffeeMainInit = (app, window, $, React, Hello, World, undefined) => {
   'use strict';
 
   return (element) => {
-    var Index = React.createClass({
+    class Index extends React.Component {
       render() {
         return (
           <div>
@@ -12,7 +10,7 @@ let coffeeMainInit = (app, window, $, React, Hello, World, undefined) => {
           </div>
         );
       }
-    });
+    }
 
     React.render(<Index />, element);
   };

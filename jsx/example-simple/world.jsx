@@ -1,5 +1,3 @@
-/** @jsx React.DOM */
-
 (function worldInit(module) {
   'use strict';
 

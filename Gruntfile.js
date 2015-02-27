@@ -27,7 +27,7 @@ module.exports = function (grunt) {
       jsx: {
         files: reactApps,
         options: {
-          transform: ['6to5ify', 'reactify']
+          transform: ['babelify', 'reactify']
         }
       }
     },

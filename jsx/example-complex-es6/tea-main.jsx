@@ -1,10 +1,8 @@
-/** @jsx React.DOM */
-
 let teaMainInit = (app, window, $, React, undefined) => {
   'use strict';
 
   return function (element) {
-    var Index = React.createClass({
+    class Index extends React.Component {
       render() {
         return (
           <div>
@@ -12,7 +10,7 @@ let teaMainInit = (app, window, $, React, undefined) => {
           </div>
         );
       }
-    });
+    }
 
     React.render(<Index />, element);
   };

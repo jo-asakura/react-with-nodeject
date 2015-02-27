@@ -1,9 +1,7 @@
-/** @jsx React.DOM */
-
 let coffeeWorldInit = (app, window, $, React, undefined) => {
   'use strict';
 
-  return React.createClass({
+  class World extends React.Component {
     render() {
       return (
         <span>
@@ -11,7 +9,9 @@ let coffeeWorldInit = (app, window, $, React, undefined) => {
         </span>
       );
     }
-  });
+  }
+
+  return World;
 };
 
 export default coffeeWorldInit;
